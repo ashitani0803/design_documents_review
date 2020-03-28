@@ -72,4 +72,26 @@
  > テーブル名と同じカラムが使用されていますが、意味的に不適切です。〜nameの方が適切です。
 
 
+## 研修担当レビュー
+## 全体
+- 入荷テーブルがありません。
 
+## adminsテーブル
+- deviseのデフォルトではメールアドレスはemail, パスワードはencrypted_passwordとなります。
+
+## users
+- user_l_name,user_f_nameではなにを示しているかわかりません。
+- member_statusのデータ型がinteger/enumとなっています。
+- deviseのデフォルトではメールアドレスはemail, パスワードはencrypted_passwordとなります。修正しましょう。
+
+## cart items
+- 購入枚数というカラム名になっています。
+
+## sell_details
+- 商品IDのFKがぬけています。
+
+## sellsテーブル
+- 支払方法、支払合計のカラム名がカラムの説明と合っていません。
+
+## songs,labels,artists,genresテーブル（共通）
+- テーブル名と同じカラム名が使用されています。nameというカラム名にすべき。
